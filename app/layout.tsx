@@ -1,4 +1,6 @@
 import './globals.css'
+import Footer from '@/components/Footer'
+import Navigation from '@/components/Navigation'
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,11 +13,34 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
-        <main className="min-h-screen bg-background flex flex-col items-center">
-          {children}
-        </main>
+    <html data-theme="moneyverse" lang="en" className="bg-purple">
+      <body className="bg-base-100">
+
+        <div className="md:container md:mx-auto">
+
+          <Navigation />
+
+
+          {/* 
+
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="border">Column</div>
+            <div className="border">Column</div>
+          </div> */}
+
+
+
+
+          <main className="min-h-screen">
+            {children}
+          </main>
+
+          <Footer />
+
+
+        </div>
+
       </body>
     </html>
   )
