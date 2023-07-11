@@ -47,7 +47,61 @@ export default async function Index() {
 
   return (
     <div className="w-full flex flex-col items-center">
-      oh yes henlo
+      <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
+        <div className="w-full max-w-4xl flex justify-between items-center p-3 text-sm text-foreground">
+          <div />
+          <div>
+            {user ? (
+              <div className="flex items-center gap-4">
+                Hey, {user.email}!
+                <LogoutButton />
+              </div>
+            ) : (
+              <Link
+                href="/login"
+                className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
+              >
+                Login
+              </Link>
+            )}
+          </div>
+        </div>
+      </nav>
+
+      <div className="animate-in flex flex-col gap-14 opacity-0 max-w-4xl px-3 py-16 lg:py-24 text-foreground">
+
+
+        <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
+
+
+
+        <div className="flex flex-col gap-8 text-foreground">
+          <div className="grid gap-2 justify-center mx-auto text-center">
+            <h2 className="text-lg font-bold text-center">Supabase clients</h2>
+            <p className="text-sm">
+              Supabase client in all the different contexts in the <code>_examples</code> folder.
+              .
+            </p>
+          </div>
+          <div className="w-full justify-center border rounded-lg overflow-hidden">
+            {examples.map(({ type, src }) => (
+              <div
+                key={type}
+                className="w-full grid grid-cols-3 border-b last:border-b-0 text-sm"
+              >
+                <div className="flex items-center font-bold p-4 min-h-12 w-full">
+                  {type}
+                </div>
+                <div className="col-span-2 border-l p-4 flex items-center">
+                  <code className="text-sm whitespace-pre-wrap">{src}</code>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+      </div>
     </div>
   )
 }
