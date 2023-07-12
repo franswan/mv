@@ -3,7 +3,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import LogoutButton from './LogoutButton'
 import NavigationTabs from './NavigationTabs'
 
@@ -20,7 +20,13 @@ export default function Navigation() {
             <div className="mx-auto">
               <div className="flex h-16 items-center justify-between">
                 <div className="flex items-center">
-                  <div className="flex-shrink-0">
+
+                  {/* Open the modal using ID.showModal() method */}
+                  <button className="btn btn-ghost border-1 border-white rounded mr-4 hidden sm:block" onClick={() => window.my_modal_2.showModal()}>
+                    <Bars3Icon className="block h-8 w-8" aria-hidden="true" />
+                  </button>
+
+                  <div className="">
                     <a href="/">
                       <svg height="35" viewBox="0 0 306 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M58.7344 0H54.1095L44.7686 18.1398L48.5459 24.6038C50.1788 21.3895 51.9286 17.8595 53.2145 14.9432H53.3935C53.5725 19.2644 53.9269 24.2739 54.2812 28.4212L54.9059 35.6268C55.0886 35.9567 55.2676 36.2831 55.4466 36.6095C55.7023 32.6999 56.0384 29.0528 56.2466 26.9312L58.8147 0.975639L58.7307 0L58.7344 0Z" fill="url(#paint0_linear_0_1)" />
@@ -73,20 +79,14 @@ export default function Navigation() {
                       </svg>
                     </a>
                   </div>
+
+
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="text-center">
-                      {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
 
 
 
-                      {/* Open the modal using ID.showModal() method */}
-                      <button className="btn btn-ghost border-none" onClick={() => window.my_modal_2.showModal()}>
-                        <svg height="12" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="50" height="4" rx="2" fill="white" />
-                          <rect y="10" width="50" height="4" rx="2" fill="white" />
-                          <rect y="20" width="50" height="4" rx="2" fill="white" />
-                        </svg>
-                      </button>
+
                       <dialog id="my_modal_2" className="modal bg-transparent modal-top top-24">
                         <form method="dialog" className="modal-box">
                           <NavigationTabs />
@@ -110,7 +110,7 @@ export default function Navigation() {
                           <span className="sr-only">Open user menu</span>
                           <img
                             className="h-8 w-8 rounded-full"
-                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                             alt=""
                           />
                         </Menu.Button>
@@ -163,12 +163,12 @@ export default function Navigation() {
                 </div>
                 <div className="-mr-2 flex sm:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="btn btn-ghost inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon className="block h-8 w-8" aria-hidden="true" />
                     ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                      <Bars3Icon className="block h-8 w-8" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
                 </div>

@@ -16,28 +16,23 @@ export default function RootLayout({
     <html data-theme="moneyverse" lang="en" className="bg-purple">
       <body className="bg-base-100">
 
-        <div className="md:container md:mx-auto">
+        <div className="md:container md:mx-auto px-8 lg:px-4">
 
           <Navigation />
 
-
-          {/* 
-
-
-          <div className="grid grid-cols-2 gap-4">
-            <div className="border">Column</div>
-            <div className="border">Column</div>
-          </div> */}
-
-
-
+          <div className="text-sm breadcrumbs">
+            <ul>
+              <li><a>Home</a></li>
+              <li><a>Solutions</a></li>
+              <li>Monetyz</li>
+            </ul>
+          </div>
 
           <main className="min-h-screen">
             {children}
           </main>
 
           <Footer />
-
 
         </div>
 

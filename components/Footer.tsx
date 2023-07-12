@@ -2,7 +2,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="footer p-10 text-white">
+      <footer className="footer px-10 py-14 text-white">
         <div>
 
           <svg width="306" height="60" viewBox="0 0 306 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,17 +61,17 @@ export default function Footer() {
         </div>
         <div>
           <span className="footer-title">Solutions</span>
-          <a className="link link-hover">Payment Processing</a>
-          <a className="link link-hover">Monytze Assets</a>
+          <a href="/solutions/products/payment-processing" className="link link-hover">Payment Processing</a>
+          <a href="/solutions/products/monetyz-assets" className="link link-hover">Monytze Assets</a>
           <a className="link link-hover">Market</a>
           <a className="link link-hover">Bank</a>
         </div>
         <div>
           <span className="footer-title">Build</span>
-          <a className="link link-hover">Register</a>
-          <a className="link link-hover">Mint</a>
-          <a className="link link-hover">Swap</a>
-          <a className="link link-hover">APIs</a>
+          <a href="/build/register" className="link link-hover">Register</a>
+          <a href="/build/mint" className="link link-hover">Mint</a>
+          <a href="/build/swap" className="link link-hover">Swap</a>
+          <a href="/build/apis" className="link link-hover">APIs</a>
         </div>
         <div>
           <span className="footer-title">Resources</span>
@@ -82,13 +82,13 @@ export default function Footer() {
         </div>
         <div>
           <span className="footer-title">About Us</span>
-          <a className="link link-hover">About The MoneyVerse</a>
-          <a className="link link-hover">Social Impact</a>
-          <a className="link link-hover">Sustainability</a>
-          <a className="link link-hover">Roadmap</a>
-          <a className="link link-hover">Contact Us</a>
-          <a className="link link-hover">Our Team</a>
-          <a className="link link-hover">MVYN Token</a>
+          <a href="/about-us/the-moneyverse" className="link link-hover">About The MoneyVerse</a>
+          <a href="/about-us/social-impact" className="link link-hover">Social Impact</a>
+          <a href="/about-us/sustainable-solutions" className="link link-hover">Sustainability</a>
+          <a href="/about-us/roadmap" className="link link-hover">Roadmap</a>
+          <a href="/about-us/contact" className="link link-hover">Contact Us</a>
+          <a href="/about-us/our-team" className="link link-hover">Our Team</a>
+          <a href="/about-us/mnvy-token" className="link link-hover">MVYN Token</a>
         </div>
       </footer>
     </>
