@@ -20,14 +20,6 @@ export default function RootLayout({
 
           <Navigation />
 
-          <div className="text-sm breadcrumbs">
-            <ul>
-              <li><a>Home</a></li>
-              <li><a>Solutions</a></li>
-              <li>Monetyz</li>
-            </ul>
-          </div>
-
           <main className="min-h-screen">
             {children}
           </main>

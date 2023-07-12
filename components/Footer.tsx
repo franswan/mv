@@ -63,8 +63,8 @@ export default function Footer() {
           <span className="footer-title">Solutions</span>
           <a href="/solutions/products/payment-processing" className="link link-hover">Payment Processing</a>
           <a href="/solutions/products/monetyz-assets" className="link link-hover">Monytze Assets</a>
-          <a className="link link-hover">Market</a>
-          <a className="link link-hover">Bank</a>
+          <a href="/solutions/market" className="link link-hover">Market</a>
+          <a href="/solutions/bank" className="link link-hover">Bank</a>
         </div>
         <div>
           <span className="footer-title">Build</span>
@@ -75,10 +75,10 @@ export default function Footer() {
         </div>
         <div>
           <span className="footer-title">Resources</span>
-          <a className="link link-hover">FAQ</a>
-          <a className="link link-hover">Blog</a>
-          <a className="link link-hover">Regulatory News</a>
-          <a className="link link-hover">Content Library</a>
+          <a href="/resources/faq" className="link link-hover">FAQ</a>
+          <a href="/resources/blog" className="link link-hover">Blog</a>
+          <a href="/resources/regulatory-news" className="link link-hover">Regulatory News</a>
+          <a href="/resources/content-library" className="link link-hover">Content Library</a>
         </div>
         <div>
           <span className="footer-title">About Us</span>
