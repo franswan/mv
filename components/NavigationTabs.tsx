@@ -33,7 +33,7 @@ export default function NavigationTabs() {
           <select
             id="tabs"
             name="tabs"
-            className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+            className="block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
             defaultValue={tabs.find((tab) => tab.current).name}
           >
             {tabs.map((tab) => (
@@ -83,10 +83,9 @@ export default function NavigationTabs() {
                         <div className="divider lg:divider-horizontal"></div>
                         <div className="grid flex-grow">
                           <h3 className="text-xs opacity-50 uppercase">Applications</h3>
-                          <ul>
+                          <ul className='space-y-4'>
                             <li><a className="link" href="/solutions/applications/market">Market</a></li>
                             <li><a className="link" href="/solutions/applications/bank">Bank</a></li>
-
                           </ul>
                         </div>
                       </div>

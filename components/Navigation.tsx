@@ -158,6 +158,12 @@ export default function Navigation() {
                     </Menu>
                   </div>
                 </div>
+
+
+
+
+
+
                 <div className="-mr-2 flex sm:hidden">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="btn btn-ghost inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
@@ -203,6 +209,8 @@ export default function Navigation() {
                   About Us
                 </Disclosure.Button>
               </div>
+
+
               <div className="border-t border-gray-700 pb-3 pt-4">
                 <div className="flex items-center px-5">
                   <div className="flex-shrink-0">

@@ -20,15 +20,18 @@ export default function LandingHero() {
           />
         </div>
 
-        <div className="relative hero-content flex-col lg:flex-row-reverse px-8">
-          <div>
-            <h1 className="text-5xl font-bold">Value Engineering Empowered by You.</h1>
-            <p className="py-6">Revolutionizing asset registration, facilitating token utility, & fostering real estate development to prevent poverty & build sustainable communities!</p>
+        <div className="relative hero-content px-8">
 
-            <button className="btn btn-primary">Get Started <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+
+          <div className="space-y-24">
+            <h1 className="text-7xl font-bold">Value Engineering<br /> Empowered by You.</h1>
+            <p className="text-3xl w-1/2">Revolutionizing asset registration, facilitating token utility, & fostering real estate development to prevent poverty & build sustainable communities!</p>
+
+            <button className="btn btn-primary btn-lg">Get Started <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
             </svg>
             </button>
+            <br />
 
             {/* Stats */}
 
@@ -64,6 +67,7 @@ export default function LandingHero() {
 
             </div>
 
+
           </div>
 
 
@@ -72,6 +76,10 @@ export default function LandingHero() {
 
 
       </div>
+
+
+
+
 
 
       <div className="px-8 py-24 grid grid-cols-1 md:grid-cols-3 gap-14">
@@ -179,7 +187,7 @@ export default function LandingHero() {
                       viewBox="0 0 162 128"
                       fill="none"
                       aria-hidden="true"
-                      className="absolute left-0 top-0 -z-10 h-32 stroke-white/20"
+                      className="absolute left-0 top-0 -z-10 h-32 stroke-primary"
                     >
                       <path
                         id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb"
@@ -187,13 +195,12 @@ export default function LandingHero() {
                       />
                       <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x={86} />
                     </svg>
-                    <blockquote className="text-xl font-normal leading-8 text-white sm:text-2xl sm:leading-9">
+                    <blockquote className="text-xl font-thin text-white sm:text-2xl ">
                       <p>
                         The Moneyverse is allowing me and my team of International property owners to leverage the value of our portfolio prior to development. We’re grateful to participate with this platform as we explore more ways to monetize our value.
                       </p>
-                    </blockquote>
-                    <div>&nbsp;</div>
-                    <figcaption className="mt-8 text-base">
+                    </blockquote><br />
+                    <figcaption className="mt-12 text-base">
                       <div className="font-semibold text-white">Judith Black</div>
                       <div className="mt-1 text-gray-400">CEO of Big Company</div>
                     </figcaption>
