@@ -22,7 +22,7 @@ export default function Navigation() {
                 <div className="flex items-center">
 
                   {/* Open the modal using ID.showModal() method */}
-                  <button className="btn btn-ghost border-1 border-white rounded mr-4 hidden sm:block" onClick={() => window.my_modal_2.showModal()}>
+                  <button className="btn btn-ghost border-1 border-white rounded mr-4 hidden sm:block" onClick={() => window.nav_tabs_modal.showModal()}>
                     <Bars3Icon className="block h-8 w-8" aria-hidden="true" />
                   </button>
 
@@ -87,7 +87,7 @@ export default function Navigation() {
 
 
 
-                      <dialog id="my_modal_2" className="modal bg-transparent modal-top top-24">
+                      <dialog id="nav_tabs_modal" className="modal bg-transparent modal-top top-24">
                         <form method="dialog" className="modal-box">
                           <NavigationTabs />
                         </form>
