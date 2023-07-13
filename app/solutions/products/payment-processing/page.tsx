@@ -19,7 +19,8 @@ export default async function Index() {
             <Image
               src="/img/backgrounds/nodes2.png"
               alt="The Nodes"
-              fill
+              layout="fill"
+              objectFit="cover"
               className="rounded-lg"
             />
           </div>
@@ -41,7 +42,7 @@ export default async function Index() {
       </div>
 
 
-      <div className="grid grid-cols-2 gap-8 mt-24 ">
+      <div className="grid grid-cols-2 gap-8 my-24 ">
 
         <div className="space-y-4">
           <h2 className="text-5xl font-light prose">Unlock Boundless Potential</h2>

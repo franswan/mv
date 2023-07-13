@@ -61,29 +61,29 @@ export default function Footer() {
           <span className="footer-title">Solutions</span>
           <a href="/solutions/products/payment-processing" className="link link-hover">Payment Processing</a>
           <a href="/solutions/products/monetyz-assets" className="link link-hover">Monytze Assets</a>
-          <a href="/solutions/market" className="link link-hover">Market</a>
-          <a href="/solutions/bank" className="link link-hover">Bank</a>
+          <a className="link link-hover opacity-30">Market</a>
+          <a className="link link-hover opacity-30">Bank</a>
         </div>
         <div>
           <span className="footer-title">Build</span>
           <a href="/build/register" className="link link-hover">Register</a>
           <a href="/build/mint" className="link link-hover">Mint</a>
           <a href="/build/swap" className="link link-hover">Swap</a>
-          <a href="/build/apis" className="link link-hover">APIs</a>
+          <a className="link link-hover opacity-30">APIs</a>
         </div>
         <div>
           <span className="footer-title">Resources</span>
-          <a href="#" className="link link-hover line-through">FAQ</a>
-          <a href="/resources/blog" className="link link-hover line-through">Blog</a>
-          <a href="/resources/regulatory-news" className="link link-hover line-through">Regulatory News</a>
-          <a href="/resources/content-library" className="link link-hover line-through">Content Library</a>
+          <a className="link link-hover opacity-30">FAQ</a>
+          <a className="link link-hover opacity-30">Blog</a>
+          <a className="link link-hover opacity-30">Regulatory News</a>
+          <a className="link link-hover opacity-30">Content Library</a>
         </div>
         <div>
           <span className="footer-title">About Us</span>
           <a href="/about-us/the-moneyverse" className="link link-hover">About The MoneyVerse</a>
           <a href="/about-us/social-impact" className="link link-hover">Social Impact</a>
           <a href="/about-us/sustainable-solutions" className="link link-hover">Sustainability</a>
-          <a href="/about-us/roadmap" className="link link-hover">Roadmap</a>
+          <a className="link link-hover opacity-30">Roadmap</a>
           <a href="/about-us/contact" className="link link-hover">Contact Us</a>
           <a href="/about-us/our-team" className="link link-hover">Our Team</a>
           <a href="/about-us/mnvy-token" className="link link-hover">MVYN Token</a>
