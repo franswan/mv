@@ -22,7 +22,7 @@ export default function NavigationTabs() {
 
   return (
     <div className="flex justify-center">
-      <div className="container px-4">
+      <div className="container max-w-6xl px-4">
 
 
         <div className="sm:hidden">
@@ -73,8 +73,8 @@ export default function NavigationTabs() {
                   {tab.name === 'Solutions' &&
                     <div>
                       <div className="flex flex-col w-full lg:flex-row">
-                        <div className="grid flex-grow space-y-4">
-                          <h3 className="text-slate-100">Products</h3>
+                        <div className="grid flex-grow space-y-4 mt-4">
+                          <h3 className="text-xs opacity-50 uppercase">Products</h3>
                           <ul className='space-y-4'>
                             <li><a className="link" href="/solutions/products/payment-processing">Payment Processing</a></li>
                             <li><a className="link" href="/solutions/products/monetyz-assets">Monetyz Assets</a></li>
@@ -82,7 +82,7 @@ export default function NavigationTabs() {
                         </div>
                         <div className="divider lg:divider-horizontal"></div>
                         <div className="grid flex-grow">
-                          <h3>Applications</h3>
+                          <h3 className="text-xs opacity-50 uppercase">Applications</h3>
                           <ul>
                             <li><a className="link" href="/solutions/applications/market">Market</a></li>
                             <li><a className="link" href="/solutions/applications/bank">Bank</a></li>
@@ -94,14 +94,14 @@ export default function NavigationTabs() {
                   }
                   {tab.name === 'Build' &&
                     <div className="flex flex-col w-full lg:flex-row">
-                      <div className="grid flex-grow space-y-4">
+                      <div className="grid flex-grow space-y-4 mt-4">
                         <ul className='space-y-4'>
                           <li><a href="/build/register">Register</a></li>
                           <li><a href="/build/mint">Mint</a></li>
                         </ul>
                       </div>
                       <div className="divider lg:divider-horizontal"></div>
-                      <div className="grid flex-grow space-y-4">
+                      <div className="grid flex-grow space-y-4 mt-4">
                         <ul className='space-y-4'>
                           <li><a href="/build/swap">Swap</a></li>
                           <li><a href="/build/apis">Apis</a></li>
@@ -111,14 +111,14 @@ export default function NavigationTabs() {
                   }
                   {tab.name === 'Resources' &&
                     <div className="flex flex-col w-full lg:flex-row">
-                      <div className="grid flex-grow space-y-4">
+                      <div className="grid flex-grow space-y-4 mt-4">
                         <ul className='space-y-4'>
                           <li><a href="/resources/faq">FAQ</a></li>
                           <li><a href="/resources/regulatory-news">Regulatory News</a></li>
                         </ul>
                       </div>
                       <div className="divider lg:divider-horizontal"></div>
-                      <div className="grid flex-grow space-y-4">
+                      <div className="grid flex-grow space-y-4 mt-4">
                         <ul className='space-y-4'>
                           <li><a href="/resources/blog">Blog</a></li>
                           <li><a href="/resources/content-library">Content Library</a></li>
@@ -128,7 +128,7 @@ export default function NavigationTabs() {
                   }
                   {tab.name === 'About Us' &&
                     <div className="flex flex-col w-full lg:flex-row">
-                      <div className="grid flex-grow space-y-4">
+                      <div className="grid flex-grow space-y-4 mt-4">
                         <ul className='space-y-4'>
                           <li><a href="/solutions/payment-processing">About The Moneyverse</a></li>
                           <li>Social Impact</li>
@@ -137,7 +137,7 @@ export default function NavigationTabs() {
                         </ul>
                       </div>
                       <div className="divider lg:divider-horizontal"></div>
-                      <div className="grid flex-grow space-y-4">
+                      <div className="grid flex-grow space-y-4 mt-4">
                         <ul className='space-y-4'>
                           <li>Contact Us</li>
                           <li>Our Team</li>
