@@ -55,14 +55,15 @@ export default function Footer() {
             </defs>
           </svg>
 
-          <p>©2023 The Moneyverse All Rights Reserved</p>
+          <p className="text-xs">©2023 The Moneyverse All Rights Reserved</p>
         </div>
+
         <div>
           <span className="footer-title">Solutions</span>
           <a href="/solutions/products/payment-processing" className="link link-hover">Payment Processing</a>
           <a href="/solutions/products/monetyz-assets" className="link link-hover">Monytze Assets</a>
-          <a className="link link-hover opacity-30">Market</a>
-          <a className="link link-hover opacity-30">Bank</a>
+          <a className="link link-hover opacity-30">Marketplace</a>
+          <a className="link link-hover opacity-30">Crypto Banking</a>
         </div>
         <div>
           <span className="footer-title">Build</span>
@@ -88,6 +89,7 @@ export default function Footer() {
           <a href="/about-us/our-team" className="link link-hover">Our Team</a>
           <a href="/about-us/mnvy-token" className="link link-hover">MVYN Token</a>
         </div>
+
       </footer>
     </>
   )

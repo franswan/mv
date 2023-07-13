@@ -67,6 +67,50 @@ export default async function Index() {
 
       </div>
 
+      <div className="divider py-24"></div>
+
+      <div className='card p-12 my-24 border border-white'>
+
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:md:grid-cols-3 gap-12'>
+          <div>
+            <h3 className="text-xl">BTC & ETH deposit
+              accounts</h3>
+            <div className="h-1 bg-gradient-to-r from-primary to-white my-4 w-3/4"></div>
+            <p className="text-sm">Exchange your BTC & ETH for MNYV Tokens to buy products and services.</p>
+          </div>
+          <div>
+            <h3 className="text-xl">Altcoin liquidity
+              accounts</h3>
+            <div className="h-1 bg-gradient-to-r from-primary to-white my-4 w-3/4"></div>
+            <p className="text-sm">Exchange your ERC20, BRC20, Altcoins & NFTs for MNYV Tokens to get more done.</p>
+          </div>
+          <div>
+            <h3 className="text-xl">Crypto credit accounts</h3>
+            <div className="h-1 bg-gradient-to-r from-primary to-white my-4 w-3/4"></div>
+            <p className="text-sm">Access credit facilities using your digital assets as collateral.</p>
+          </div>
+          <div>
+            <h3 className="text-xl">MNYV money
+              account</h3>
+            <div className="h-1 bg-gradient-to-r from-primary to-white my-4 w-3/4"></div>
+            <p className="text-sm">Mint MNYV & manage your Moneyverse Tokens effortlessly.</p>
+          </div>
+          <div>
+            <h3 className="text-xl">MNYV
+              Marketplace</h3>
+            <div className="h-1 bg-gradient-to-r from-primary to-white my-4 w-3/4"></div>
+            <p className="text-sm">Discover products and services spanning various countries & industries that all accept your crypto as payment!</p>
+          </div>
+          <div>
+            <h3 className="text-xl">MNYV payment
+              portal</h3>
+            <div className="h-1 bg-gradient-to-r from-primary to-white my-4 w-3/4"></div>
+            <p className="text-sm">Facilitate easy, secure, and swift payments within the Moneyverse ecosystem.</p>
+          </div>
+
+        </div>
+      </div>
+
       <div className="divider"></div>
     </div>
   )
