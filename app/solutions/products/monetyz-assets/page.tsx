@@ -2,6 +2,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { FaGlobeAmericas, FaRegImage } from 'react-icons/fa'
 import { FaDiamond, FaPersonArrowUpFromLine } from 'react-icons/fa6'
+import Image from 'next/image'
 
 export default async function Index() {
   const supabase = createServerComponentClient({ cookies })
@@ -14,12 +15,22 @@ export default async function Index() {
     <div className="w-full">
 
 
-      <div className="card min-h-screen bg-base-200">
-        <div className="py-24">
+      <div className="relative card min-h-screen bg-base-200">
 
-          <div className="w-2/3 px-8">
 
-            <h1 className="text-5xl font-bold">Monetyz the Value of
+        <div className="absolute inset-0">
+          <Image
+            src="/img/backgrounds/nodes2.png"
+            alt="The Nodes"
+            fill
+          />
+        </div>
+
+        <div className="z-50 py-24 space-y-8">
+
+          <div className="w-full md:w-2/3 px-8">
+
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light prose">Monetyz the Value of
               ANY Type of Asset!</h1>
             <div className="h-1 bg-gradient-to-r from-primary to-white my-4"></div>
 
@@ -38,24 +49,41 @@ export default async function Index() {
 
           <div className="divider"></div>
 
-          <div className="grid grid-cols-3 px-8 py-24">
+
+
+
+
+          <div className="grid grid-cols-1 md:grid-cols-3 px-8 py-24">
             <div>
-              <div className="bg-black border border-white rounded-full h-12 w-12 flex items-center justify-center">1</div>
-              <h4>Identification of Asset</h4>
+
+              <div className="flex flex-row items-center">
+                <div className="shrink mr-4">
+                  <span className="bg-black border border-white rounded-full h-12 w-12 flex items-center justify-center">1</span>
+                </div>
+                <div className="text-xl">Identification of Asset</div>
+              </div>
+
               <ul className='my-8'>
                 <li><span className="float-left mr-2 h-4 w-4 text-primary"> <FaDiamond /></span>Categorize</li>
                 <li><span className="float-left mr-2 h-4 w-4 text-primary"> <FaDiamond /></span>Name</li>
                 <li><span className="float-left mr-2 h-4 w-4 text-primary"> <FaDiamond /></span>Describe</li>
               </ul>
             </div>
+
             <div>
               <div className="bg-black border border-white rounded-full h-12 w-12 flex items-center justify-center">2</div>
               <h4>Proof of Ownership</h4>
-              <ul className='my-8'>
-                <li><span className="float-left mr-2 h-4 w-4 text-primary"> <FaDiamond /></span>Upload Image / Video</li>
+              <ul className='my-8 space-y-4'>
+                <li className='flex items-center'>
+                  <span className="mr-2 h-4 w-4 text-primary flex-shrink-0">
+                    <FaDiamond />
+                  </span>
+                  Upload Image / Video
+                </li>
+
                 <li><span className="float-left mr-2 h-4 w-4 text-primary"> <FaDiamond /></span>Upload Documentation</li>
                 <li><span className="float-left mr-2 h-4 w-4 text-primary"> <FaDiamond /></span>Are there other owners?</li>
-                <div><ul>
+                <div><ul className='ml-4 text-xs space-y-2'>
                   <li>How much do they own?</li>
                   <li>Names and Percentages</li>
                 </ul>
@@ -154,7 +182,7 @@ export default async function Index() {
         </div>
       </div>
 
-
+      <div className="divider"></div>
 
     </div>
   )

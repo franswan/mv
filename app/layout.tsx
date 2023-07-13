@@ -24,7 +24,7 @@ export default function RootLayout({
                 <Navigation />
               </div>
             </div>
-            <main className="min-h-screen pt-24">
+            <main className="min-h-screen pt-12">
               {children}
             </main>
 

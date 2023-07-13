@@ -6,7 +6,7 @@ export default async function Index() {
     <>
       <div className="w-full">
 
-        <div className="min-h-screen">
+        <div className=" min-h-screen">
           <div className="">
 
             <div>
@@ -24,10 +24,11 @@ export default async function Index() {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>
               </button>
-
-
             </div>
           </div>
+
+
+
         </div>
         <div className='divider'></div>
 
