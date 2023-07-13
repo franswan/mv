@@ -13,22 +13,24 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html data-theme="moneyverse" lang="en" className="bg-purple">
+    <html data-theme="moneyverse" lang="en" className="">
 
       <body className="bg-base-100">
+        <div className="flex justify-center">
 
-        <div className="md:container md:mx-auto px-8 lg:px-4">
-          <div className=' bg-black bg-opacity-80'>
-            <div>
-              <Navigation />
+          <div className="max-w-full sm:max-w-6xl px-8 lg:px-4">
+            <div className='bg-opacity-80'>
+              <div>
+                <Navigation />
+              </div>
             </div>
+            <main className="min-h-screen pt-24">
+              {children}
+            </main>
+
+            <Footer />
+
           </div>
-          <main className="min-h-screen pt-24">
-            {children}
-          </main>
-
-          <Footer />
-
         </div>
 
       </body>

@@ -14,7 +14,7 @@ export default async function Index() {
   return (
     <div className="w-full">
 
-      <nav className="w-full flex justify-center  h-16">
+      {/* <nav className="w-full flex justify-center  h-16">
         <div className="w-full max-w-4xl flex justify-between items-center p-3 text-sm text-foreground">
           <div />
           <div>
@@ -33,7 +33,7 @@ export default async function Index() {
             )}
           </div>
         </div>
-      </nav>
+      </nav> */}
 
 
       {/* Landing Page */}

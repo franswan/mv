@@ -18,7 +18,7 @@ export default function Navigation() {
       <Disclosure as="nav" className="pt-8">
         {({ open }) => (
           <>
-            <div className="mx-auto">
+            <div className="">
               <div className="flex h-16 items-center justify-between">
                 <div className="flex items-center">
 
