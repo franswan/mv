@@ -55,8 +55,6 @@ export default function Footer() {
             </defs>
           </svg>
 
-
-
           <p>©2023 The Moneyverse All Rights Reserved</p>
         </div>
         <div>
@@ -75,10 +73,10 @@ export default function Footer() {
         </div>
         <div>
           <span className="footer-title">Resources</span>
-          <a href="/resources/faq" className="link link-hover">FAQ</a>
-          <a href="/resources/blog" className="link link-hover">Blog</a>
-          <a href="/resources/regulatory-news" className="link link-hover">Regulatory News</a>
-          <a href="/resources/content-library" className="link link-hover">Content Library</a>
+          <a href="#" className="link link-hover line-through">FAQ</a>
+          <a href="/resources/blog" className="link link-hover line-through">Blog</a>
+          <a href="/resources/regulatory-news" className="link link-hover line-through">Regulatory News</a>
+          <a href="/resources/content-library" className="link link-hover line-through">Content Library</a>
         </div>
         <div>
           <span className="footer-title">About Us</span>
