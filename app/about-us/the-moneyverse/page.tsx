@@ -7,15 +7,16 @@ export default async function Index() {
       <div className="w-full">
 
         <div className="relative min-h-screen">
+
           <div className="absolute inset-0">
             <Image
-              src="/img/backgrounds/banner.png"
+              src="/img/backgrounds/earth.png"
               alt="The Erf"
               fill
             />
           </div>
 
-          <div className="relative z-10">
+          <div className="relative z-10 card p-24">
 
             <div>
               <h1>

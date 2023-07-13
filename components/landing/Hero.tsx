@@ -10,9 +10,17 @@ export default function LandingHero() {
     <>
 
       {/* Hero */}
-      <div className="hero min-h-screen bg-base-200 rounded-lg">
+      <div className="relative hero min-h-screen bg-base-200 rounded-lg">
 
-        <div className="hero-content flex-col lg:flex-row-reverse px-8">
+        <div className="absolute inset-0">
+          <Image
+            src="/img/backgrounds/portal.png"
+            alt="The Erf"
+            fill
+          />
+        </div>
+
+        <div className="relative hero-content flex-col lg:flex-row-reverse px-8">
           <div>
             <h1 className="text-5xl font-bold">Value Engineering Empowered by You.</h1>
             <p className="py-6">Revolutionizing asset registration, facilitating token utility, & fostering real estate development to prevent poverty & build sustainable communities!</p>

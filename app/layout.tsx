@@ -17,10 +17,12 @@ export default function RootLayout({
       <body className="bg-base-100">
 
         <div className="md:container md:mx-auto px-8 lg:px-4">
-
-          <Navigation />
-
-          <main className="min-h-screen">
+          <div className='fixed z-50 bg-black bg-opacity-80'>
+            <div>
+              <Navigation />
+            </div>
+          </div>
+          <main className="min-h-screen pt-24">
             {children}
           </main>
 
