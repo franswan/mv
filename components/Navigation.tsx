@@ -6,6 +6,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import LogoutButton from './LogoutButton'
 import NavigationTabs from './NavigationTabs'
+import Image from 'next/image'
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
@@ -28,7 +29,8 @@ export default function Navigation() {
 
                   <div className="">
                     <a href="/">
-                      <svg height="35" viewBox="0 0 306 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <Image src={'/img/brand/logo.svg'} alt={'The Money Verse'} width="75" height="75" />
+                      {/* <svg height="35" viewBox="0 0 306 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M58.7344 0H54.1095L44.7686 18.1398L48.5459 24.6038C50.1788 21.3895 51.9286 17.8595 53.2145 14.9432H53.3935C53.5725 19.2644 53.9269 24.2739 54.2812 28.4212L54.9059 35.6268C55.0886 35.9567 55.2676 36.2831 55.4466 36.6095C55.7023 32.6999 56.0384 29.0528 56.2466 26.9312L58.8147 0.975639L58.7307 0L58.7344 0Z" fill="url(#paint0_linear_0_1)" />
                         <path d="M9.01209 0H4.38727L4.01465 4.37796L6.24669 26.9312C6.55721 29.7765 6.8458 33.1965 7.05403 36.4641C7.33532 35.939 7.62391 35.4033 7.91982 34.8569L8.47874 28.4212C8.83309 24.7067 9.1911 19.6086 9.36644 15.1171H9.54545C10.8971 18.0263 12.4424 21.3115 13.9219 24.3271L18.006 17.4267L9.01209 0Z" fill="url(#paint1_linear_0_1)" />
                         <path d="M39.702 32.5223L38.8984 34.0833C36.4069 38.9225 33.7402 44.2761 31.7821 48.9414H31.6031C29.5574 44.2761 26.6203 38.6635 24.3079 34.1684L23.3581 32.3271L19.2593 39.2701L29.9994 59.9963H32.7575L43.5049 38.9863L39.6984 32.5187L39.702 32.5223Z" fill="url(#paint2_linear_0_1)" />
@@ -76,7 +78,7 @@ export default function Navigation() {
                             <stop offset="1" stop-color="#9747FF" />
                           </linearGradient>
                         </defs>
-                      </svg>
+                      </svg> */}
                     </a>
                   </div>
 
